@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid palevioletred;
+    border-radius: 50%;
+    box-shadow: 0 -10px 15px palevioletred ,
+    inset 0 -10px 15px palevioletred,
+    0 5px 15px wheat,
+    inset 0 5px 15px wheat;
+    position: relative;
+}
+
+.dot {
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(209, 213, 212);
+    box-shadow: 0 0 10px wheat, 0 0 40px wheat, 0 0 80px rgb(255, 255, 255);
+}
+
+.second {
+    width: 2px;
+    height: 50%;
+    background: rgb(163, 163, 163);
+    box-shadow: 0 0 5px white,0 0 10px white;
+    margin: 0 0 50% 0;
+    position: absolute;
+    animation: circle 60s infinite;
+    transform-origin: 50% 100%;
+    animation-timing-function: linear;
+}
+
+
+@keyframes circle {
+    100% {
+        transform: rotate(360deg);
+    }
+}

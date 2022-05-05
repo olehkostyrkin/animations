@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(37, 37, 37);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15cm;
+    height: 15cm;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.box {
+    width: 220px;
+    height: 220px;
+    background-color: plum;
+    box-shadow: 0px 0px 10px plum, 0px 0px 40px plum,0px 0px 80px plum;
+
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+         transform: rotate(-360deg)
+        } 
